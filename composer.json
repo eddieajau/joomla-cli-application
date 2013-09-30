@@ -1,4 +1,10 @@
 {
+  "name": "theartofjoomla/joomla-cli-application",
+  "type": "project",
+  "description": "A distribution of the \"Joomla Framework\" for supporting a command-line (CLI) application.",
+  "keywords": ["joomla", "framework", "application", "command-line", "cli"],
+  "homepage": "https://github.com/eddieajau/joomla-cli-application",
+  "license": "LGPL-2.1+",
   "minimum-stability" : "beta",
   "require" : {
     "joomla/application" : "1.0-beta2",
