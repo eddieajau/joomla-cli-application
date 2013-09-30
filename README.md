@@ -15,7 +15,7 @@ If you don't have Composer, follow the installation instructions on the [http://
 Then, use the `create-project` command to download and prepare your command-line application:
 
 ```bash
-$ php composer.phar create-project theartofjoomla/joomla-cli-application path/to/install
+$ php composer.phar create-project -s dev theartofjoomla/joomla-cli-application path/to/install
 ```
 
 Composer will install the project under the `path/to/install` folder and automatically download all the dependencies into the `path/to/install/vendor` folder.
