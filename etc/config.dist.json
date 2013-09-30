@@ -1,0 +1,6 @@
+{
+	"debug" : false,
+	"logger" : {
+		"channel" : "Acme"
+	}
+}
