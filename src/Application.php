@@ -9,6 +9,7 @@
 namespace Acme;
 
 use Joomla\Application\AbstractCliApplication;
+use Joomla\Application\Cli\Output\Processor\ColorProcessor;
 use Joomla\DI\Container;
 
 /**
@@ -43,6 +44,8 @@ class Application extends AbstractCliApplication
 	 */
 	public function doExecute()
 	{
+		$this->getOutput()->setProcessor(new ColorProcessor);
+
 		// Check if help is needed.
 		if ($this->input->get('h') || $this->input->get('help'))
 		{

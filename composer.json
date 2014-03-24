@@ -1,20 +1,32 @@
 {
-  "name": "theartofjoomla/joomla-cli-application",
-  "type": "project",
-  "description": "A distribution of the \"Joomla Framework\" for supporting a command-line (CLI) application.",
-  "keywords": ["joomla", "framework", "application", "command-line", "cli"],
-  "homepage": "https://github.com/eddieajau/joomla-cli-application",
-  "license": "LGPL-2.1+",
-  "minimum-stability" : "beta",
-  "require" : {
-    "joomla/application" : "1.0-beta2",
-    "joomla/di" : "1.0-beta2",
-    "monolog/monolog" : "1.6.*"
-  },
-  "autoload" : {
-    "psr-0" : {
-      "Acme\\" : "src",
-      "Providers\\" : "src"
-    }
-  }
+	"name": "theartofjoomla/joomla-cli-application",
+	"type": "project",
+	"description": "A distribution of the \"Joomla Framework\" for supporting a command-line (CLI) application.",
+	"keywords": [
+		"joomla",
+		"framework",
+		"application",
+		"command-line",
+		"cli"
+	],
+	"homepage": "https://github.com/eddieajau/joomla-cli-application",
+	"license": "LGPL-2.1+",
+	"require": {
+		"joomla/input": "~1.1.1",
+		"joomla/event": "~1.1.0",
+		"joomla/session": "~1.1",
+		"joomla/string": "~1.1",
+		"joomla/registry": "~1.1",
+		"joomla/uri": "~1.1",
+		"joomla/filesystem": "~1.1",
+		"joomla/application": "~1.1.1",
+		"joomla/di": "~1.1.1",
+		"monolog/monolog": "1.*@stable"
+	},
+	"autoload": {
+		"psr-4": {
+			"Acme\\": "src",
+			"Providers\\": "src/Providers"
+		}
+	}
 }
