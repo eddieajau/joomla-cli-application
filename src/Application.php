@@ -30,7 +30,7 @@ class Application extends AbstractCliApplication
 	/**
 	 * The application's DI container.
 	 *
-	 * @var    Di\Container
+	 * @var    Container
 	 * @since  1.1
 	 */
 	private $container;
@@ -77,7 +77,7 @@ class Application extends AbstractCliApplication
 			return $input;
 		}, true);
 
-		$container->registerServiceProvider(new \Providers\ConfigServiceProvider);
+		$container->registerServiceProvider(new \Providers\ConfigServiceProvider(APPLICATION_CONFIG));
 		$container->registerServiceProvider(new \Providers\LoggerServiceProvider);
 
 		$this->container = $container;
