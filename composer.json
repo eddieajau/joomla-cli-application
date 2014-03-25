@@ -12,13 +12,6 @@
 	"homepage": "https://github.com/eddieajau/joomla-cli-application",
 	"license": "LGPL-2.1+",
 	"require": {
-		"joomla/input": "~1.1.1",
-		"joomla/event": "~1.1.0",
-		"joomla/session": "~1.1",
-		"joomla/string": "~1.1",
-		"joomla/registry": "~1.1",
-		"joomla/uri": "~1.1",
-		"joomla/filesystem": "~1.1",
 		"joomla/application": "~1.1.1",
 		"joomla/di": "~1.1.1",
 		"monolog/monolog": "1.*@stable"
